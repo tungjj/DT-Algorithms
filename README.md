@@ -5,7 +5,7 @@ Some code for my learning data structures and algorithms
 ## Sort
 
 ### 1 Bubble sort
-![Bubble_Sort](bubble_sort.gif)
+![Bubble_Sort](./Images/bubble_sort.gif)
 ### 2 Insertion sort
 ![Insertion_Sort](insertion_sort.gif)
 ### 3 Selection sort
