@@ -1,5 +1,4 @@
 
-
 public class Main {
     // 3
     // 1 | 5
@@ -14,6 +13,15 @@ public class Main {
         tree.add(4);
         tree.add(6);
 
-        tree.preorderWithStack();
+        Tree treeB = new Tree(3);
+
+        treeB.add(1);
+        treeB.add(5);
+        treeB.add(10);
+        treeB.add(2);
+        treeB.add(4);
+        treeB.add(6);
+
+        System.out.println(CompareUtils.compareTree(tree, treeB));
     }
 }
