@@ -12,6 +12,9 @@ public class Main {
         tree.add(2);
         tree.add(4);
         tree.add(6);
+        tree.add(7);
+        tree.add(9);
+        tree.add(20);
 
         Tree treeB = new Tree(3);
 
@@ -23,5 +26,7 @@ public class Main {
         treeB.add(6);
 
         System.out.println(CompareUtils.compareTree(tree, treeB));
+
+        System.out.println(DepthTree.getDepth(tree.getRoot()));
     }
 }
