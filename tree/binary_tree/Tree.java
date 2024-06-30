@@ -57,11 +57,11 @@ public class Tree {
     }
 
     public void inorderWithStack() {
-        Stack<Node> stk = new Stack<Node>();
+        Stack<Node> stk = new Stack<>();
         Node curr = this.root;
 
         // stk.push(curr);
-        while (curr != null || stk.size() > 0) {
+        while (curr != null || !stk.isEmpty()) {
             while (curr != null) {
                 stk.push(curr);
                 curr = curr.getLeftNode();
@@ -73,11 +73,11 @@ public class Tree {
     }
 
     public void preorderWithStack() {
-        Stack<Node> stk = new Stack<Node>();
+        Stack<Node> stk = new Stack<>();
         Node curr = this.root;
         stk.push(curr);
 
-        while (stk.size() > 0) {
+        while (!stk.isEmpty()) {
             curr = stk.pop();
             System.out.println(curr.getValue());
 
@@ -91,11 +91,11 @@ public class Tree {
     }
 
     public void postorderWithStack() {
-        Stack<Node> stk = new Stack<Node>();
+        Stack<Node> stk = new Stack<>();
         Node curr = this.root;
         stk.push(curr);
 
-        while (stk.size() > 0) {
+        while (!stk.isEmpty()) {
             curr = stk.pop();
             System.out.println(curr.getValue());
 
